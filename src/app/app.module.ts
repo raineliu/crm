@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { routing } from './app.routing';
 // import { HeaderComponent } from './header/header.component';
 // import { SidebarComponent } from './sidebar/sidebar.component';
@@ -17,7 +18,7 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     LoginComponent,
-    routing
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,8 @@ import { routing } from './app.routing';
     BrowserAnimationsModule,
     NgZorroAntdModule.forRoot(),
     NgLoggerModule.forRoot(Level.LOG),
-    RouterModule
+    RouterModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
