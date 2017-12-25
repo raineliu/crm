@@ -5,7 +5,7 @@
     bottom: 0px;
     right: 0px;
     z-index: -1;
-    border:1px solid red;
+    // border:1px solid red;
     width: 100%;
     height: 100%;
     #bgimg{
@@ -21,31 +21,54 @@
     }
     .contain{
         position: relative;
-        top: 20%;
+        top: 10%;
         width:410px;
         margin: 0 auto;
-        border:solid 1px green;
+        // border:solid 1px green;
         text-align: center;
         // z-index:1;
         .logo{
-            margin: 20px auto 0 auto;
+            margin: 20px auto 0px auto;
             width: 380px;
             height: 140px;
             // text-align: center;
             // border:solid 1px pink;            
             img{
-                width: 180px;
+                width: 138px;
             }
         }
-        .form{
-            .contain{
-                margin: 10px 0;
+        #form{
+            .container{
+                // border:1px solid greenyellow;    
+                margin: 10px 0px;            
+                .input_style{
+                    border:1px solid #ccc;
+                    width:270px;                                    
+                    height: 30px;
+                    padding-left: 40px;
+                    border-radius: 4px;
+                    color:#fff;
+                    font-size: 14px;
+                    font-family: 'LatoRegular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif !important;
+                }
                 #username{
-                    width: 380px;
-                    height: 66px;
-                    background-color: url("/assets/img/mail.png") no-repeat;
+                    background: url("/assets/img/user.png") no-repeat 4% center;
+                }
+                #password{
+                    background: url("/assets/img/pwd.png") no-repeat;
                 }
             }
+            .btn{
+                width: 270px;
+                height: 30px;
+                border: none;
+                border-radius: 4px;
+            }
         } 
+        .container{
+            span{
+                // color:#ccc;
+            }
+        }
     }
 }
