@@ -24,7 +24,7 @@
         top: 15%;
         width:410px;
         margin: 0 auto;
-        border:solid 1px green;
+        // border:solid 1px green;
         text-align: center;
         // z-index:1;
         .logo{
@@ -39,36 +39,49 @@
         }
         #form{
             .container{
+                display:flex;
+                justify-content: center;
+                align-items: center;
                 // border:1px solid #a7aba53b;    
                 margin: 10px auto;    
                 width: 284px;
                 height: 40px; 
-                // line-height: 40px;
                 background-color: #a7aba53b;  
                 border-radius: 4px; 
-                text-align: left;
-                img{
-                    width: 30px;
-                    height: 30px;
-                    margin-left: 2px;
-                    margin-top: 5px;
-                }                    
+                text-align: left;              
+                .glyphicon:before{
+                    font-size: 24px;
+                    position: relative;
+                    top: 1px;
+                    display: inline-block;
+                    font-family: 'Glyphicons Halflings';
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    color: #8da068;
+                }
+                .glyphicon-envelope:before{
+                    content: "\2709";
+                } 
+                .glyphicon-lock:before{
+                    content: "\2708";
+                }     
                 .input_style{
                     border:none;
                     width:240px;                                    
-                    // height: 30px;
-                    // padding-left: 2px;
-                    // color:#fff;
+                    height: 30px;
                     margin-top: 5px;
+                    padding-left: 7px;                                
                     font-size: 14px;
                     font-family: Arial,'微软雅黑', sans-serif !important;
-                    // background-color:transparent;
+                    background-color:transparent;
                 }
-                #username{
-                    // background: url("/assets/img/user.png") no-repeat 4% center;
-                }
-                #password{
-                    // background: url("/assets/img/pwd.png") no-repeat;
+                input::-webkit-input-placeholder{
+                    color: #ccc;
+                    letter-spacing: 0.3px;
+                    font-size: 14px;
+                    font-family: Arial,'微软雅黑', sans-serif !important;                    
                 }
             }
             .btn{
@@ -77,9 +90,8 @@
                 border: none;
                 border-radius: 36px;
                 background-color: #b6e84fc9;
-            // line-height: 60px;
                 font-family: Arial,'微软雅黑', sans-serif !important;
-                font-size: 17px;
+                font-size: 16px;
                 font-weight: normal;
                 color:#f7f5f5c7;
                 letter-spacing: 0.6px;
@@ -98,7 +110,9 @@
             border-top: 1px solid #cccccc8c;
             width: 317px;
             height: 60px;
-            margin: 34px auto;
+            margin-top: 50px;
+            margin-left:auto;
+            margin-right:auto;
             a{
                 vertical-align: middle;
                 color:#ccc;
