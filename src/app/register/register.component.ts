@@ -11,6 +11,6 @@ export class RegisterComponent {
     private router: Router,
   ) { }
 
-
+  
 
 }
